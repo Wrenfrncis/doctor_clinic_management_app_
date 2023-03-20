@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/login">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.navcomponent.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_secondfragment"
+            app:destination="@id/secondfragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_appointment"
+            app:destination="@id/appointment" />
+        <action
+            android:id="@+id/action_mainFragment_to_edit"
+            app:destination="@id/edit" />
+        <action
+            android:id="@+id/action_mainFragment_to_patient_manager"
+            app:destination="@id/patient_manager" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondfragment"
+        android:name="com.example.navcomponent.secondfragment"
+        android:label="fragment_secondfragment"
+        tools:layout="@layout/fragment_secondfragment" />
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.navcomponent.login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_login_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_login_to_register"
+            app:destination="@id/register" />
+    </fragment>
+    <fragment
+        android:id="@+id/register"
+        android:name="com.example.navcomponent.register"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/appointment"
+        android:name="com.example.navcomponent.appointment"
+        android:label="fragment_appointment"
+        tools:layout="@layout/fragment_appointment" />
+    <fragment
+        android:id="@+id/edit"
+        android:name="com.example.navcomponent.edit"
+        android:label="fragment_edit"
+        tools:layout="@layout/fragment_edit" />
+    <fragment
+        android:id="@+id/patient_manager"
+        android:name="com.example.navcomponent.patient_manager"
+        android:label="fragment_patient_manager"
+        tools:layout="@layout/fragment_patient_manager" />
+
+
+</navigation>

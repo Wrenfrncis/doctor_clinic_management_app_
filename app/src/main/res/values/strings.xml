@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">navcomponent</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name1">Name:</string>
+    <string name="birth">Birth Date: DD/MM/YYYY</string>
+    <string name="diag1">Diagnoses:</string>
+    <string name="pres">Prescription:</string>
+    <string name="addpat">Submit patient</string>
+    <string name="addpat2">Update</string>
+    <string name="appoin">Appointment</string>
+    <string name="sub">Submit</string>
+    <string name="selectdate">Select Date</string>
+    <string name="cal">Calender</string>
+    <string name="editdat">Edit</string>
+
+    <string name="diag2">New Diagnoses:</string>
+    <string name="pres2">New Prescription:</string>
+    <string name="time1">Time:</string>
+    <string name="male">Time:</string>
+    <string name="female">Time:</string>
+    <string name="other">Time:</string>
+    <string name="gen">Gender</string>
+    <string name="oth">Other</string>
+    <string name="F">F</string>
+    <string name="M">M</string>
+    <string name="log">LOGIN</string>
+    <string name="username">Username</string>
+    <string name="lp">********</string>
+    <string name="Forgot">Forgot password ?</string>
+    <string name="Dont">Dont have an Account?</string>
+    <string name="SignUp">SignUp</string>
+    <string name="Addpatient">Add Patient</string>
+    <string name="createappointment">Create Appointment</string>
+    <string name="patientmanager">Patient Manager</string>
+    <string name="editpatient">edit patient</string>
+    <string name="todayspatients">todays patients</string>
+    <string name="Register">Register</string>
+    <string name="Username">Username</string>
+    <string name="Already_have_an_account">Already have an account</string>
+    <string name="Email">Email</string>
+    <string name="Forgot_Password">Forgot_Password</string>
+    <string name="textview1">textview1</string>
+    <string name="textview2">textview2</string>
+    <string name="textview3">textview3</string>
+    <string name="textview4">textview4</string>
+    <string name="Done">Done</string>
+
+
+
+</resources>

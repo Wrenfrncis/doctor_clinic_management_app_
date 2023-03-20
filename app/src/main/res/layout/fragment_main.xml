@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+<variable
+    name="fragment"
+    type="com.example.navcomponent.MainFragment" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bacfrnt"
+        tools:context=".MainFragment">
+
+
+        <GridLayout
+
+            android:id="@+id/gridLayout"
+            android:layout_width="372dp"
+
+            android:layout_height="352dp"
+
+            android:columnCount="2"
+            android:rowCount="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mainpage_cardview1"
+                android:layout_width="186dp"
+                android:layout_height="170dp"
+                app:cardBackgroundColor="@color/lightblue"
+
+                app:cardCornerRadius="8dp"
+
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true"
+                app:layout_column="0"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_row="0"
+                app:layout_rowWeight="1"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="507dp">
+
+                <LinearLayout
+                    android:id="@+id/add_patient1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_column="0"
+                    app:layout_gravity="center_vertical|center_horizontal"
+                    app:layout_row="0"
+                    android:onClick="@{() -> fragment.nav_to_add_patient()}"
+                    tools:ignore="UseCompoundDrawables">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/add_pat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/Addpatient"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+
+
+                        android:textStyle="bold"
+
+
+                        />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--        sds-->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/patient_manager_cardview"
+                android:layout_width="186dp"
+                android:layout_height="170dp"
+                app:cardBackgroundColor="@color/lightblue"
+
+                app:cardCornerRadius="8dp"
+
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true"
+                app:layout_column="0"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_row="1"
+                app:layout_rowWeight="1"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="507dp">
+
+                <LinearLayout
+                    android:id="@+id/createappoint"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_column="0"
+                    app:layout_gravity="center_vertical|center_horizontal"
+                    app:layout_row="0"
+                    android:onClick="@{() -> fragment.nav_to_create_appo()}">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/createapnmt" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/createappointment"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/todaypatient_cardview1"
+                android:layout_width="186dp"
+                android:layout_height="170dp"
+                app:cardBackgroundColor="@color/lightblue"
+
+                app:cardCornerRadius="8dp"
+
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true"
+                app:layout_column="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_row="0"
+                app:layout_rowWeight="1"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="507dp">
+
+                <LinearLayout
+                    android:id="@+id/patmanager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_column="0"
+                    app:layout_gravity="center_vertical|center_horizontal"
+                    app:layout_row="0"
+                    android:onClick="@{() -> fragment.nav_to_patientmanager()}">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/patmanag" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/patientmanager"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!--        sjdfhsvjdfh-->
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/editpatient_cardview1"
+                android:layout_width="186dp"
+                android:layout_height="170dp"
+                app:cardBackgroundColor="@color/lightblue"
+
+                app:cardCornerRadius="8dp"
+
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true"
+                app:layout_column="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_row="0"
+                app:layout_rowWeight="1"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="507dp">
+
+                <LinearLayout
+                    android:id="@+id/editpageid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_column="0"
+                    app:layout_gravity="center_vertical|center_horizontal"
+                    app:layout_row="0"
+                    android:onClick="@{() -> fragment.nav_to_edit_patient()}">
+
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/editpat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/editpatient"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/todayspatients"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/pat_list21"
+            android:layout_width="404dp"
+            android:layout_height="286dp"
+
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:itemCount="12"
+            tools:listitem="@layout/itmpat" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
