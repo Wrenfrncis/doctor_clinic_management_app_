@@ -82,8 +82,6 @@
 
 
             </androidx.cardview.widget.CardView>
-
-
             <!--        sds-->
 
             <androidx.cardview.widget.CardView
@@ -130,11 +128,7 @@
                         android:textColor="@color/black"
                         android:textStyle="bold" />
                 </LinearLayout>
-
-
             </androidx.cardview.widget.CardView>
-
-
             <androidx.cardview.widget.CardView
                 android:id="@+id/todaypatient_cardview1"
                 android:layout_width="186dp"
@@ -182,11 +176,7 @@
 
 
             </androidx.cardview.widget.CardView>
-
-
             <!--        sjdfhsvjdfh-->
-
-
             <androidx.cardview.widget.CardView
                 android:id="@+id/editpatient_cardview1"
                 android:layout_width="186dp"
@@ -216,13 +206,10 @@
                     app:layout_row="0"
                     android:onClick="@{() -> fragment.nav_to_edit_patient()}">
 
-
-
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/editpat" />
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -232,13 +219,8 @@
                         android:textColor="@color/black"
                         android:textStyle="bold" />
                 </LinearLayout>
-
-
             </androidx.cardview.widget.CardView>
-
-
         </GridLayout>
-
         <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
@@ -250,13 +232,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
-
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/pat_list21"
             android:layout_width="404dp"
             android:layout_height="286dp"
-
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintBottom_toTopOf="@+id/gridLayout"
             app:layout_constraintEnd_toEndOf="parent"
@@ -264,7 +243,5 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:itemCount="12"
             tools:listitem="@layout/itmpat" />
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

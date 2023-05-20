@@ -41,31 +41,15 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="18dp"
-            android:text="@{pat.name}"
+            android:text="@{pat.time}"
             android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/buttonq"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintHorizontal_weight="1"
             app:layout_constraintStart_toEndOf="@+id/name1"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0" />
-
-        <Button
-            android:id="@+id/buttonq"
-            android:layout_width="100dp"
-            android:layout_height="35dp"
-            android:text="@string/Done"
-            android:textColor="@color/black"
-
-            android:backgroundTint="@color/lightblue"
-            android:textSize="12sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/time1"
-            app:layout_constraintTop_toTopOf="parent" />
 
         <View
             android:id="@+id/divider"

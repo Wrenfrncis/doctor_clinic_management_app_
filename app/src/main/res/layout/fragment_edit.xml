@@ -24,6 +24,7 @@
         app:layout_constraintVertical_bias="0.162" />
 
     <Button
+        android:id="@+id/update"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/btn_bg"
@@ -36,28 +37,51 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine"
         app:layout_constraintVertical_bias="0.431" />
 
-    <EditText
-        android:id="@+id/loginusername"
-        android:layout_width="0dp"
-        android:layout_height="48dp"
+    <!--    <EditText-->
+    <!--        android:id="@+id/loginusername"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="48dp"-->
+    <!--        android:layout_marginStart="32dp"-->
+    <!--        android:layout_marginTop="58dp"-->
+    <!--        android:layout_marginEnd="32dp"-->
+    <!--        android:background="@drawable/input_bg"-->
+    <!--        android:drawableLeft="@drawable/person1"-->
+    <!--        android:drawablePadding="10dp"-->
+    <!--        android:ems="10"-->
+    <!--        android:hint="@string/name1"-->
+    <!--        android:inputType="textPersonName"-->
+    <!--        android:paddingLeft="20dp"-->
+    <!--        android:paddingTop="10dp"-->
+    <!--        android:paddingRight="10dp"-->
+    <!--        android:paddingBottom="10dp"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="1.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textViewlogin" />-->
+
+    <Spinner
+        android:id="@+id/name_spinner"
+        android:layout_width="148dp"
+        android:layout_height="47dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="58dp"
+        android:layout_marginTop="52dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/input_bg"
-        android:drawableLeft="@drawable/person1"
+        android:drawableEnd="@drawable/dropdown_arrow"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="@string/name1"
+        android:hint="@string/nameuser"
         android:inputType="textPersonName"
-        android:paddingLeft="20dp"
+        android:paddingStart="20dp"
         android:paddingTop="10dp"
-        android:paddingRight="10dp"
+        android:paddingEnd="10dp"
         android:paddingBottom="10dp"
         android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/name"
         app:layout_constraintTop_toBottomOf="@+id/textViewlogin" />
 
     <EditText
@@ -82,7 +106,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginusername" />
+        app:layout_constraintTop_toBottomOf="@+id/name_spinner" />
 
     <EditText
         android:id="@+id/editTextTextMultiLine"
@@ -112,5 +136,30 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/diagnose" />
+
+    <TextView
+        android:id="@+id/name"
+
+        android:layout_width="202dp"
+        android:layout_height="47dp"
+
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/person1"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/nameuser"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/nameuser"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewlogin" />
+    />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

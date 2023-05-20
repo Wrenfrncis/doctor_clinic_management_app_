@@ -1,9 +1,12 @@
 <resources>
-    <string name="app_name">navcomponent</string>
+    <string name="app_name">Easy Clinic </string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="name1">Name:</string>
+    <string name="name2">  Name:</string>
+    <string name="nameuser">Select patient:</string>
     <string name="birth">Birth Date: DD/MM/YYYY</string>
+    <string name="birth2">Birth Date</string>
     <string name="diag1">Diagnoses:</string>
     <string name="pres">Prescription:</string>
     <string name="addpat">Submit patient</string>
